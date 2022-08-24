@@ -11,8 +11,9 @@
 <body>
     <section id="app">
 
-       <ul>
-        <li v-for="response in 10">{{emailCasuale}}</li>
+       <ul v-if ="emailCasuale.length == 10" >
+
+        <li v-for="email in emailCasuale">{{email}}</li>
        </ul>
  
 
